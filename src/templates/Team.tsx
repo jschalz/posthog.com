@@ -11,6 +11,7 @@ import { kebabCase } from 'lib/utils'
 import React, { useState } from 'react'
 import {
     StickerMayor,
+    StickerFlagAR,
     StickerFlagAT,
     StickerFlagBE,
     StickerFlagCA,
@@ -22,6 +23,7 @@ import {
     StickerFlagFR,
     StickerFlagGB,
     StickerFlagHU,
+    StickerFlagHR,
     StickerFlagNL,
     StickerFlagPL,
     StickerFlagUnknown,
@@ -124,12 +126,16 @@ const Stickers = ({ country, pineappleOnPizza, isTeamLead, isModerator, id, hand
                     <StickerFlagFI className="w-8 h-8" />
                 ) : country === 'HU' ? (
                     <StickerFlagHU className="w-8 h-8" />
+                ) : country === 'HR' ? (
+                    <StickerFlagHR className="w-8 h-8" />
                 ) : country === 'IE' ? (
                     <StickerFlagIE className="w-8 h-8" />
                 ) : country === 'FR' ? (
                     <StickerFlagFR className="w-8 h-8" />
                 ) : country === 'NL' ? (
                     <StickerFlagNL className="w-8 h-8" />
+                ) : country === 'AR' ? (
+                    <StickerFlagAR className="w-8 h-8" />
                 ) : country === 'AT' ? (
                     <StickerFlagAT className="w-8 h-8" />
                 ) : country === 'CA' ? (
